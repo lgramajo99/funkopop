@@ -30,9 +30,103 @@
             </div>
         </nav>
     </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>Administrar productos</h1>
+            </div>
+            <div class="col-2">
+                <img src="img/batmanAdmin.jpg" alt="imagern de batmanAdmin" class="w-100">
+            </div>
+        </div>
+        <hr>
+        <article class="row">
+            <div class="col-10 text-center">
+                <h3>Tabla de productos</h3>
+            </div>
+            <div class="col-2 text-right">
+                <button class="btn btn-outline-primary" data-toggle="modal"
+                    data-target="#modalProducto">Agregar</button>
+            </div>
+        </article>
 
+        <article class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Nº Serie</th>
+                        <th scope="col">categoria</th>
+                        <th scope="col">descripcion</th>
+                        <th scope="col">imagen</th>
+                        <th scope="col">opciones</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tablaProducto">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>superman</td>
+                        <td>039msa</td>
+                        <td>Superheroe</td>
+                        <td>descripcion</td>
+                        <td>superman</td>
+                        <td>
+                            <button class="btn btn-outline-primary">Agregar</button>
+                            <button class="btn btn-outline-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <div class="modal fade" id="modalProducto" tabindex="-1" role="dialog" aria-labelledby="modalProducto"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Administrar Funkopop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Codigo</label>
+                            <input placeholder="Ej: 1" type="number" id="codigo" class="form-control">
+                        </div>
+                        <!--  -->
+                        <div class="form-group">
+                            <label>nombre</label>
+                            <input placeholder="Ej: ironman" type="text" id="nombre" class="form-control">
+                        </div>
+                        <!--  -->
+                        <div class="form-group">
+                            <label>nª serie</label>
+                            <input placeholder="Ej: 234PAQ" type="text" id="nSerie" class="form-control">
+                        </div>
+                        <!--  -->
+                        <div class="form-group">
+                            <label>categoria</label>
+                            <input placeholder="Ej: superheroe" type="text" id="categoria" class="form-control">
+                        </div>
+                        <!--  -->
+                        <div class="form-group">
+                            <label>imagen</label>
+                            <input placeholder="Ej: imagen.png" type="text" id="imagen" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="bg-dark text-light text-center py-3">
-    <p>&copy; Todos los derechos reservados</p>
+        <p>&copy; Todos los derechos reservados</p>
     </footer>
 </body>
 
